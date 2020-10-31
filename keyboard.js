@@ -51,13 +51,6 @@ const Keyboard = {
             "shift", "z", "x", "c", "v", "b", "n", "m", ",", ".", "?",
             "done", "voice","space", "EN", "arrow_left", "arrow_right"
         ]; // array of entire key layer (number, letters, backspace and etc.)
-       /* const keyLayoutShift = [
-            "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_",
-            "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "{", "}",
-            "caps", "a", "s", "d", "f", "g", "h", "j", "k", "l", "enter",
-            "shift", "z", "x", "c", "v", "b", "n", "m", "<", ">", "/",
-            "done", "voice","space", "EN", "arrow_left", "arrow_right"
-        ]*/
 
         // Create HTML for an icon
         const createIconHtml = (icon_name) => {
@@ -209,11 +202,6 @@ const Keyboard = {
                 if (this.properties.shift && this.properties.capsLock) {
                     key.textContent = key.textContent.toLowerCase();
                 };
-                switch (key) {
-                    case "1":
-                        key.textContent = "!";
-                        break;
-                }
            }
        }
     },
